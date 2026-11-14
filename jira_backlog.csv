@@ -1,0 +1,15 @@
+Issue Type,Summary,Description,Priority,Sprint
+Epic,Data ingestion and quality,Load S3 source datasets and clean them into Redshift,High,Sprint 1-2
+Story,Define requirements and metrics,Confirm each metric definition keys and limitations,High,Sprint 1
+Task,Complete SRS and solution design,Populate requirements and design documents,High,Sprint 1
+Task,Create Redshift schemas and DDL,Create healthcare_clean and Project-Output schemas and tables,High,Sprint 1
+Story,Ingest source files from S3,Read CSV and JSON inputs with explicit schemas,High,Sprint 2
+Task,Normalize and clean source records,Standardize names parse dates fill descriptive nulls and drop exact duplicates,High,Sprint 2
+Story,Publish analytical output tables,Create one Redshift output per approved use case,High,Sprint 2
+Task,Implement claim and disease metrics,Disease counts rejected claims and claim city,High,Sprint 2
+Task,Implement subscriber and group metrics,Age subgroup premium type mix and group profitability proxy,High,Sprint 2
+Task,Implement patient and hospital metrics,Hospital patient counts and cancer patient cohort with date caveat,Medium,Sprint 2
+Story,Validate pipeline outputs,Run data quality and acceptance checklist,High,Sprint 2
+Task,Create test evidence,Record expected behavior actual counts and blocked field dependencies,High,Sprint 2
+Task,Prepare class presentation,Explain architecture joins outputs and limitations with screenshots,Medium,Sprint 2
+Story,Extend source data for blocked use cases,Add admission date procedure cashless flag and total charges,Medium,Backlog

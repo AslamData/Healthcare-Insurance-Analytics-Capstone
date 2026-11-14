@@ -1,0 +1,11 @@
+Test ID,Test case,Expected result,Observed result,Status
+TC01,Confirm all eight clean tables exist in healthcare_clean,All eight tables are queryable,,""
+TC02,Check clean-table row counts,claim 70; disease 60; group_subgroup 38; hospital 20; patient 70; policy_group 58; subgroup 10; subscriber 100,,""
+TC03,Reconcile claim summaries,Source claims and disease/city summaries each total 70,,""
+TC04,Check subscriber subgroup links,98 subscribers are linked to a subgroup,,""
+TC05,Validate average monthly premium,Average is 1867.34 across 98 subscribers,,""
+TC06,Validate rejected claims,Rejected claim count is 22,,""
+TC07,Check cashless claims output,No qualifying rows with supplied fields; output is empty,,""
+TC08,Check knee surgery output,No qualifying rows with supplied fields; output is empty,,""
+TC09,Check under-18 cancer output,No qualifying rows for the defined filter; output is empty,,""
+TC10,Check output table creation,All 13 project-output tables exist,,""
